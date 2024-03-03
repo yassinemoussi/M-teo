@@ -1,0 +1,115 @@
+@font-face{
+    font-family: Montserrat-Thin;
+    src: url(montserrat/Montserrat-Thin.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat-Thin;
+}
+body {
+    justify-content: center;
+    background-image: url(Sunset-1920x1080-9915cf54f5965e863c9291101e9206fd.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+/* Première div */
+.container{
+    width: 700px;
+    color: white;
+    font-weight: 900;
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding-top: 50px;
+    align-items: center;
+}
+.header h1{
+    font-size: 8rem;
+}
+.header h2{
+    font-size: 3rem;
+}
+@keyframes rotateSun {
+    0% {
+        transform: rotateZ(0deg);
+        transform-origin: center;
+    }
+    100% {
+        transform: rotateZ(100deg);
+    }
+}
+.icon-sun {
+    animation: rotateSun 3s linear infinite;
+} 
+
+/* Deuxième div */
+.details-meteo-heure{
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+}
+.details-meteo-heure table{
+    border: 3px solid #151515;
+    width: 95%;
+    background-color: #f0a78230;
+    border-radius: 25px;
+}
+.details-meteo-heure td,th{
+    padding: 9px;
+}
+
+/* Troisième div */
+.details-meteo-days {
+    margin-top: 60px;
+    text-align: center;
+    width: 95%;
+    border-radius: 25px;
+    background-color: #f0a78230;
+    border: 1px solid #151515;
+    margin-bottom: 20px;
+}
+.details-meteo-days td,
+.details-meteo-days th {
+    padding: 12px;
+    text-align: center; 
+}
+
+/* footer */
+.meteo-sunrise-sunset{
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+}
+.meteo-sunrise-sunset table{
+    width: 665px;
+    background-color: #f0a78230;
+    border: 1px solid #151515;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 100px;
+}
+.meteo-sunrise-sunset td{
+    padding: 10px;
+    position: relative;
+}
+.fa-arrow-down,
+.fa-arrow-up {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%);
+}
+.fa-arrow-down {
+    transform: translate(-50%, -75%);
+}
+.fa-arrow-up {
+    transform: translate(-50%, -75%);
+}
